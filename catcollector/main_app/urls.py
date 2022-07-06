@@ -6,7 +6,7 @@ urlpatterns = [ #this is a list of what our URLS are in our app
     path('', views.home, name='home'),
     #about view. no slash in front.
     path('about/', views.about, name='about'),
-    
+
     #add another path to cats
-    path('cats/', views.cats, name='cats')
+    path('cats/', views.cats_index, name='cats')
 ]

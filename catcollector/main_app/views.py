@@ -13,3 +13,6 @@ def home(request):
 #render a page instead!
 def about(request):
   return render(request, 'about.html')
+
+def cats_index(request):
+    return render(request, 'cats/index.html')
