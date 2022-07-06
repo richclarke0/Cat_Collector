@@ -50,6 +50,13 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+DATABASES = {
+    'default' : {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME' : 'catcollector'
+    }
+}
+
 ROOT_URLCONF = 'catcollector.urls'
 
 TEMPLATES = [
