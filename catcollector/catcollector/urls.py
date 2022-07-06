@@ -14,8 +14,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+#added include to above
+# pay attention to lines 13-14 above. they mention this 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include ('main_app.urls'))
+    #added above, this redirects all root traffic to / to our main_app we created
+    #still need to add main_app.urls
 ]
