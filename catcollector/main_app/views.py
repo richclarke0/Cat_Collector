@@ -5,4 +5,4 @@ from django.http import HttpResponse
 #this is our controller file where we create all of our individual views
 
 def home(request):
-    return HttpResponse("<h1>Hello /ᐠ｡‸｡ᐟ\ﾉ</h1>") 
+    return HttpResponse("<h1>Hello /ᐠ｡‸｡ᐟ\ﾉ</h1>") #HttpResponse is like res.send in express
