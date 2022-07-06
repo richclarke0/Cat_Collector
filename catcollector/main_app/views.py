@@ -7,5 +7,9 @@ from django.http import HttpResponse
 def home(request):
     return HttpResponse("<h1>Hello /ᐠ｡‸｡ᐟ\ﾉ</h1>") #HttpResponse is like res.send in express
 
+# def about(request):
+#     return HttpResponse("about page") #aboutpage
+
+#render a page instead!
 def about(request):
-    return HttpResponse("about page") #aboutpage
+  return render(request, 'about.html')
