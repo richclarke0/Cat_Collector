@@ -22,5 +22,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include ('main_app.urls'))
     #added above, this redirects all root traffic to / to our main_app we created
-    #still need to add main_app.urls
 ]
