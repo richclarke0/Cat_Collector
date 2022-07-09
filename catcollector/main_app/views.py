@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Cat
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
+
 
 # Add the Cat class & list and view function below the imports
 # class Cat:  # Note that parens are optional if not inheriting from another class
