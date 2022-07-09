@@ -16,3 +16,7 @@ body {
     padding-top: 0;
     text-align: right;
   }
+
+  .nav-wrapper, .page-footer {
+    background-color: grey;
+  }
