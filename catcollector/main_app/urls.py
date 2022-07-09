@@ -11,5 +11,8 @@ urlpatterns = [ #this is a list of what our URLS are in our app
     path('cats/', views.cats_index, name='cats'),
 
     #cat by id
-    path('cats/<int:cat_id>/', views.cats_detail, name='detail')
+    path('cats/<int:cat_id>/', views.cats_detail, name='detail'),
+
+    #add new path for create
+    path('cats/create/', views.CatCreate.as_view(), name='cats_create'),
 ]
