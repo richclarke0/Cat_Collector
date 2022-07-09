@@ -6,8 +6,8 @@
 
 {% for cat in cats %}
 <div class="card">
-  <!-- add this single line below -->
-  <a href="/cats/{{ cat.id }}">
+  {% comment %} <a href="/cats/{{ cat.id }}"> {% endcomment %}
+    <a href="{% url 'detail' cat.id %}">
     <div class="card-content">
       <span class="card-title">{{ cat.name }}</span>
       <p>Breed: {{ cat.breed }}</p>
