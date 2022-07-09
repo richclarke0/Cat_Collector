@@ -8,5 +8,8 @@ urlpatterns = [ #this is a list of what our URLS are in our app
     path('about/', views.about, name='about'),
 
     #add another path to cats
-    path('cats/', views.cats_index, name='cats')
+    path('cats/', views.cats_index, name='cats'),
+
+    #cat by id
+    path('cats/<int:cat_id>/', views.cats_detail, name='detail')
 ]
