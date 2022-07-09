@@ -13,3 +13,6 @@ class Cat(models.Model):
     description = models.TextField(max_length=250)
     #integer
     age = models.IntegerField()
+
+    def __str__(self):
+        return self.name
