@@ -17,11 +17,7 @@ from .models import Cat
 # ]
 
 # this is the new database import
-def cats_index(request):
-    # cats from db
-  cats = Cat.objects.all()
-  #
-  return render(request, 'cats/index.html', { 'cats': cats })
+
 
 # Create your views here.
 #this is our controller file where we create all of our individual views
@@ -37,4 +33,7 @@ def about(request):
   return render(request, 'about.html')
 
 def cats_index(request):
+# this is the new database importline
+    cats = Cat.objects.all()
     return render(request, 'cats/index.html', {'cats': cats })
+
