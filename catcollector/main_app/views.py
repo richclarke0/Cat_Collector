@@ -45,5 +45,5 @@ def cats_detail(request, cat_id):
   return render(request, 'cats/detail.html', { 'cat': cat })
 
 class CatCreate(CreateView):
-    model = Cat()
+    model = Cat
     fields = '__all__'
