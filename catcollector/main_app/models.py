@@ -8,7 +8,7 @@ class Cat(models.Model):
     #in the class define each property as model attributes
     #this defines it as a string field
     name = models.CharField(max_length = 100)
-    breed = models.Charfield(max_length = 100)
+    breed = models.CharField(max_length = 100)
     #text field
     description = models.TextField(max_length=250)
     #integer
