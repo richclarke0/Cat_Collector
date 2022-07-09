@@ -43,3 +43,7 @@ def cats_detail(request, cat_id):
   cat = Cat.objects.get(id=cat_id)
   #render template, pass it to the cat
   return render(request, 'cats/detail.html', { 'cat': cat })
+
+class CatCreate(CreateView):
+    model = Cat()
+    fields = '__all__'
