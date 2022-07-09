@@ -47,3 +47,4 @@ def cats_detail(request, cat_id):
 class CatCreate(CreateView):
     model = Cat
     fields = '__all__'
+    success_url='/cats/'
