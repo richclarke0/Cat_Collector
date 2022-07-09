@@ -1,5 +1,7 @@
 from django.db import models
 
+from django.urls import reverse
+
 # Create your models here.
 #models is a parent class, and this models class has a bunch of functionality built in
 
@@ -16,3 +18,6 @@ class Cat(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return reverse('detail', kwargs={'cat_id': self.id})
