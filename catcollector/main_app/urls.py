@@ -15,4 +15,8 @@ urlpatterns = [ #this is a list of what our URLS are in our app
 
     #add new path for create
     path('cats/create/', views.CatCreate.as_view(), name='cats_create'),
+
+    #add update delete
+    path('cats/<int:pk>/update/', views.CatUpdate.as_view(), name='cats_update'),
+    path('cats/<int:pk>/delete/', views.CatDelete.as_view(), name='cats_delete'),
 ]
