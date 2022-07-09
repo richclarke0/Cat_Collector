@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from models import Cat
+from .models import Cat
 
 # Add the Cat class & list and view function below the imports
 # class Cat:  # Note that parens are optional if not inheriting from another class
@@ -18,7 +18,9 @@ from models import Cat
 
 # this is the new database import
 def cats_index(request):
+    # cats from db
   cats = Cat.objects.all()
+  #
   return render(request, 'cats/index.html', { 'cats': cats })
 
 # Create your views here.
