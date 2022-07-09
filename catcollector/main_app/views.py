@@ -16,6 +16,11 @@ from models import Cat
 #   Cat('Raven', 'black tripod', '3 legged cat', 4)
 # ]
 
+# this is the new database import
+def cats_index(request):
+  cats = Cat.objects.all()
+  return render(request, 'cats/index.html', { 'cats': cats })
+
 # Create your views here.
 #this is our controller file where we create all of our individual views
 
